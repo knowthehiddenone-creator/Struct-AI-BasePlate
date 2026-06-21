@@ -1,0 +1,70 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        page: "#F8FAFC",
+        surface: "#FFFFFF",
+        surfaceGray: "#F1F5F9",
+        surfaceHover: "#E2E8F0",
+        borderLight: "#E2E8F0",
+        borderMed: "#CBD5E1",
+        primary: "#2563EB",
+        primaryDark: "#1D4ED8",
+        primaryLight: "#EFF6FF",
+        primaryBorder: "#BFDBFE",
+        textPrimary: "#0F172A",
+        textSecondary: "#475569",
+        textMuted: "#94A3B8",
+        success: "#16A34A",
+        successLight: "#F0FDF4",
+        successBorder: "#BBF7D0",
+        warning: "#D97706",
+        warningLight: "#FFFBEB",
+        warningBorder: "#FDE68A",
+        danger: "#DC2626",
+        dangerLight: "#FEF2F2",
+        dangerBorder: "#FECACA",
+        info: "#0891B2",
+        infoLight: "#ECFEFF",
+        infoBorder: "#A5F3FC",
+        neutralDark: "#1E293B",
+        neutralText: "#E2E8F0",
+      },
+      fontFamily: {
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+      },
+      boxShadow: {
+        card: "0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06)",
+        cardHover: "0 4px 12px rgba(0,0,0,0.12)",
+        cardElevated: "0 8px 24px rgba(0,0,0,0.10)",
+        inputFocus: "0 0 0 3px rgba(37,99,235,0.15)",
+        modal: "0 20px 60px rgba(0,0,0,0.15)",
+      },
+      borderRadius: {
+        btn: "8px",
+        card: "12px",
+        input: "8px",
+        badge: "6px",
+        modalR: "16px",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(8px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 400ms ease",
+        fadeInUp: "fadeInUp 300ms ease",
+      },
+    },
+  },
+  plugins: [],
+};
